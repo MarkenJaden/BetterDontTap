@@ -1,0 +1,126 @@
+﻿@page "/betterdonttap"
+@using System.Text.Encodings.Web
+
+<h1>Better Dont Tap</h1>
+
+@{
+    switch (status)
+    {
+        case 1:
+            <body style="background: rgb(0,0,0);">
+                <div class="table-responsive text-truncate" style="height: 650px;width: 650px;">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0px;"><button class="btn @(getColor(1)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 1))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(2)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 2))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(3)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 3))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(4)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 4))"></button></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0px;"><button class="btn @(getColor(5)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 5))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(6)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 6))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(7)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 7))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(8)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 8))"></button></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0px;"><button class="btn @(getColor(9)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 9))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(10)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 10))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(11)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 11))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(12)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 12))"></button></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0px;"><button class="btn @(getColor(13)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 13))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(14)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 14))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(15)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 15))"></button></td>
+                                <td style="padding: 0px;"><button class="btn @(getColor(16)) border rounded-0" type="button" style="width: 162.5px;height: 162.5px;padding: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;" @onclick="@(e => Click(e, 16))"></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </body>
+            break;
+        case 2:
+            break;
+        default: //Mainmene
+            <div class="container text-center" style="background: #3b4358;color: rgb(231,234,237);height: 200px;padding-top: 28px;">
+                <div>
+                    <h2 class="text-center">Better Don't Tap</h2>
+                    <p class="text-center">This is a better, or worse version of White Tile 2, idk</p>
+                </div>
+                <div><button class="btn border rounded" type="button" style="color: rgb(227,232,237);" @onclick="start">Play</button></div>
+            </div>
+            break;
+    }
+}
+
+@code {
+
+    int status = 3;
+
+    readonly string light = "btn-light";
+    readonly string dark = "btn-dark";
+    readonly string danger = "btn-danger";
+
+    bool disabled = true;
+
+    Dictionary<int, string> buttons = new Dictionary<int, string>();
+    List<int> usedNumbers = new List<int>();
+
+    public void Click(MouseEventArgs e, int number)
+    {
+        if (disabled) return;
+        if (buttons[number].Equals(dark))
+        {
+            buttons[number] = light;
+            getBlackFields(1);
+            usedNumbers.Remove(number);
+        }
+        else
+        {
+            buttons[number] = danger;
+            disabled = true;
+        }
+    }
+
+    public string getColor(int number)
+    {
+        try
+        {
+            return buttons[number];
+        }
+        catch (Exception e)
+        {
+            return light;
+        }
+    }
+
+    public void start()
+    {
+        buttons.Clear();
+        disabled = !disabled;
+        for (int i = 1; i < 17; i++)
+        {
+            Console.WriteLine(i);
+            buttons.Add(i, light);
+        }
+        getBlackFields(3);
+        status = 1;
+    }
+
+    private void getBlackFields(int count)
+    {
+        Random rnd = new Random();
+        for (int i = 0; i < count; i++)
+        {
+            int temp = rnd.Next(1, 17);
+            while (usedNumbers.Contains(temp))
+            {
+                temp = rnd.Next(1, 17);
+            }
+            buttons[temp] = dark;
+            usedNumbers.Add(temp);
+        }
+    }
+
+}
